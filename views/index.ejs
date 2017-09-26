@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ChatRoom</title>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+  	<script type="text/javascript">
+  		var socket = io.connect('/')
+  		socket.on('connected', function(){
+  			alert('connected to ChatRoom')
+  		})
+  	</script>
+  </body>
+</html>
